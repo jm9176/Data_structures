@@ -10,7 +10,7 @@ def string_to_goat_latin(var):
 
         else:
             temp = var[0]
-            var.remove(temp)
+            var.replace(temp,'')
             var = var + temp + 'ma'
 
         var = var + add_a
