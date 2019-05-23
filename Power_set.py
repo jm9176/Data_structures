@@ -26,7 +26,7 @@ arr = [1,2,3,4,5]
 print(power_set(arr))
 
 '''
-# Using comprehension
+# Using list comprehension
 
 def power_set(arr):
     power_list = [[]]
