@@ -1,6 +1,7 @@
 def string_to_goat_latin(var):
     var_list = var.split(' ')
     add_a = 'a'
+    resulting_string = ''
 
     for var in var_list:
 
@@ -15,9 +16,9 @@ def string_to_goat_latin(var):
         var = var + add_a
         add_a = add_a + 'a'
         
-        result += var + ' '
+        resulting_string += var + ' '
 
-    return result
+    return resulting_string
     
 given_string = 'My name is abc'
 print(string_to_goat_latin(given_string))
