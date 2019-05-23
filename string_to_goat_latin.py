@@ -28,6 +28,5 @@ def string_to_goat_latin(var):
 
     return resulting_string
     
-given_string = 'My name is abc'
+given_string = 'My user name is jm9176'
 print(string_to_goat_latin(given_string))
-  
