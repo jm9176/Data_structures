@@ -12,10 +12,10 @@ def arr_rot(arr, shift):
             if i < len(arr) - 1:
                 arr[i] = arr[i+1]
             else:
-                arr[i] = temp
-        
+                arr[i] = temp     
 
     return arr
+
 
 arr = [1,2,3,4,5,6,7]
 print(arr_rot(arr,4))
