@@ -1,3 +1,5 @@
+# finding a pair with a given sum
+
 def pair_check(arr, var_sum):
         for var in arr:
             if var_sum - var in arr:
