@@ -24,3 +24,18 @@ def power_set(arr):
 # Input array
 arr = [1,2,3,4,5]
 print(power_set(arr))
+
+'''
+# Using comprehension
+
+def power_set(arr):
+    power_list = [[]]
+
+    for var in arr:
+        power_list.extend([var1 + [var] for var1 in power_list])
+
+    return power_list
+
+arr = [1,2,3,4,5]
+print(power_set(arr))
+'''
