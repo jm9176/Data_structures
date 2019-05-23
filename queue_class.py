@@ -1,3 +1,6 @@
+# Creating a queue class to insert and 
+# remove an element
+
 class Queue:
     def __init__(self):
         self.queue = []
