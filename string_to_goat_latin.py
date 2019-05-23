@@ -1,3 +1,11 @@
+# Coverting teh given string to goat latin language using following rules:
+# In case of a vowel in a word, add 'ma' at the end of the word
+# In case of a consonant put the first letter at the end and add 'ma' at the end
+# for each processed word increment the add of a letter 'a' at the end
+
+# For the given input 'My name is abc'
+# The output will be 'yMmaa amenmaaa ismaaaa abcmaaaaa'
+
 def string_to_goat_latin(var):
     var_list = var.split(' ')
     add_a = 'a'
