@@ -2,7 +2,7 @@
 If the input list is of the form [1,2,3,4]
 then the output should result in [24,12,8,6]
 '''
-
+# Finding the product of elements in a list
 def prod(arr):
     var_prod = 1
     for var in arr:
@@ -10,6 +10,7 @@ def prod(arr):
 
     return var_prod
 
+# Generating the modified list
 def list_gen(arr):
     var_prod = prod(arr)
 
@@ -18,6 +19,7 @@ def list_gen(arr):
 
     return arr
 
+# Input list
 arr = [1, 2, 3, 4]
 print (list_gen(arr))
 
