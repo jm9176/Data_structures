@@ -16,8 +16,7 @@
 Approach:
 1. Finding the transpose
 2. Swapping the row for ccw
-   and cols for cw
-        
+   and cols for cw     
 '''
 
 # Finding the transpose of a 2d matrix
@@ -27,6 +26,7 @@ def mat_trans(arr):
     for i in range(len(arr)):
         for j in range(len(arr[i])):
             trans_arr[i][j] = arr[j][i]   
+    
     return trans_arr
 
 # Finding the rotation matrix for a given input
@@ -44,14 +44,12 @@ def mat_rot(arr,direct):
 
     return rot_arr
 
-
 # Input matrix
 arr=[[1,2,3,4],
      [5,6,7,8],
      [9,10,11,12],
      [13,14,15,16]
     ]
-
 
 print("Matrix transpose", mat_trans(arr))
 print("Rotation matrix", mat_rot(arr, 'cw'))
