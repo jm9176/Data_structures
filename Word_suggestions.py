@@ -38,7 +38,6 @@ dict_map = {'dark',
             'dear',
             'den',
             'deer',
-            'doll',
             'donkey',
             'double'
             }
