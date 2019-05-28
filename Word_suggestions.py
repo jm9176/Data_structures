@@ -9,7 +9,7 @@ given dictionary.
 
 code output: 
 Enter the input letter: d
-['dark', 'dear', 'doll', 'deer', 'double', 'den', 'donkey']
+['dark', 'dear', 'deer', 'double', 'den', 'donkey']
 Enter the input letter: de
 ['dear', 'deer', 'den']
 Enter the input letter: dee
