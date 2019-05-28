@@ -18,7 +18,7 @@ Enter the input letter: dee
 '''
 
 # Function to return the suggestions
-def autocomplete(var, dict_map):
+def word_suggestion(var, dict_map):
     suggestions = []
     len_inp = len(var)
 
@@ -46,5 +46,5 @@ dict_map = {'dark',
 # till the actual word is not found
 while var not in dict_map:
     var = input("Enter the input letter: ")
-    print(autocomplete(var, dict_map))
+    print(word_suggestion(var, dict_map))
     
