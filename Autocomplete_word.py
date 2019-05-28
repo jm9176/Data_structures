@@ -1,3 +1,11 @@
+'''
+If a letter is used as an input lets say 'd',
+the function will return the list of possible words
+starting with that letter. If the input is now further
+changed to 'de' then the list will get updated to return 
+the related words starting with de and so on.
+'''
+
 # Function to return the suggestions
 def autocomplete(var, dict_map):
     suggestions = []
@@ -10,7 +18,7 @@ def autocomplete(var, dict_map):
     return suggestions 
 
 
-# Taking the input from the user
+# Initializing the input variable
 var = ''
 
 # defining the dictionary map for
@@ -24,7 +32,8 @@ dict_map = {'dark',
             'double'
             }
 
-# Running 
+# Running the loop to take the input 
+# till the actual word is not found
 while var not in dict_map:
     var = input("Enter the input letter: ")
     print(autocomplete(var, dict_map))
