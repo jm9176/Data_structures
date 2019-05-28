@@ -36,7 +36,7 @@ def staircase(num):
         step_0 = step_1[:]
         step_1 = new_step[:]
 
-    return new_list
+    return new_step
 
 
 # Defining the input
