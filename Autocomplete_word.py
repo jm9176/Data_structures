@@ -5,7 +5,16 @@ starting with that letter. If the input is now further
 changed to 'de' then the list will get updated to return 
 the related words starting with de and so on. The while loop
 will end when the required word is found exactly in the 
-given dictionary
+given dictionary.
+
+code output: 
+Enter the input letter: d
+['dark', 'dear', 'doll', 'deer', 'double', 'den', 'donkey']
+Enter the input letter: de
+['dear', 'deer', 'den']
+Enter the input letter: dee
+['deer']
+
 '''
 
 # Function to return the suggestions
@@ -39,3 +48,4 @@ dict_map = {'dark',
 while var not in dict_map:
     var = input("Enter the input letter: ")
     print(autocomplete(var, dict_map))
+    
