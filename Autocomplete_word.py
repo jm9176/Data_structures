@@ -3,7 +3,9 @@ If a letter is used as an input lets say 'd',
 the function will return the list of possible words
 starting with that letter. If the input is now further
 changed to 'de' then the list will get updated to return 
-the related words starting with de and so on.
+the related words starting with de and so on. The while loop
+will end when the required word is found exactly in the 
+given dictionary
 '''
 
 # Function to return the suggestions
