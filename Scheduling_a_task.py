@@ -14,11 +14,11 @@ def scheduler(f, t_ms):
     time.sleep(t_ms)
     return f(int(t_ms*1000))
 
-def print_hello(num):
+def print_thread_name(num):
     for i in range(num):
         print threading.currentThread().getName()
 
 # Initializing a thread for the job scheduler
-t1 = threading.Thread(target = scheduler, args=(print_hello, 0.005))
+t1 = threading.Thread(target = scheduler, args=(print_thread_name, 0.005))
 t1.start()
 time.sleep(1)
