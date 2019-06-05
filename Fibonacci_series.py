@@ -57,3 +57,21 @@ def fib(n):
 n = int(input("Enter the no: "))
 print(fib(n))
 '''
+'''
+# Calculating the fibonacci number at index n
+# using recursion and memory
+memo = {0:0,
+        1:1}
+
+def fib(n):
+
+    if n not in memo:
+        memo[n] = fib(n-1) + fib(n-2)
+
+    return memo[n]
+
+# Taking the input from the user
+n = int(input("Enter the no: "))
+print(fib(n))
+'''
+
