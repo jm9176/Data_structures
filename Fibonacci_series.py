@@ -41,3 +41,19 @@ try:
 except:
     print("Not a number")
 '''
+
+'''
+# Calculating the fibonacci number at index n
+def fib(n):
+    a, b = 0,1
+
+    for i in range(n):
+        a, b = b, a+b
+        print(a, a+b)
+
+    return a
+
+# Taking the input from the user
+n = int(input("Enter the no: "))
+print(fib(n))
+'''
