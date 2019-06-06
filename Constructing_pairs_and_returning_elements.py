@@ -1,0 +1,28 @@
+'''
+cons(a, b) constructs a pair, and car(pair) and 
+cdr(pair) returns the first and last element of 
+that pair. For example, car(cons(3, 4)) returns 
+3, and cdr(cons(3, 4)) returns 4.
+'''
+
+# Constructs a pair
+def cons(a, b):
+    def pair(f):
+        return f(a, b)
+    return pair
+
+# Returns the first element of the pair
+def car(f):
+    def first(a,b):
+        return a
+    return f(first)
+
+# Returns last element of the pair
+def cdr(f):
+    def last(a,b):
+        return b
+    return f(last)
+
+# Defining the input
+print(car(cons(3,4)))
+print(cdr(cons(3,4)))
