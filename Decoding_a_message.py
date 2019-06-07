@@ -33,7 +33,7 @@ def decd_msg(message, k):
     if int(message[k:k + 2]) >= 10 and int(message[k:k + 2]) <= 26:
 
         # Count variable to check if there is a character whose
-        # integer value is greater than 10
+        # integer value is greater than equal to 10
         count = 0
         if k >= 2:
             for var in msg[:k]:
