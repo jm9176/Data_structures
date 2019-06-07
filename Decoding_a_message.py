@@ -51,3 +51,21 @@ def decd_msg(message, k):
 # with the message and Initial index
 message = '111111'
 decd_msg(message, 0)
+
+'''
+Output of this input will be:
+aaaaaa
+aaaak
+aaaka
+aakaa
+aakk
+akaaa
+akak
+akka
+kaaaa
+kaak
+kaka
+kkaa
+kkk
+'''
+
