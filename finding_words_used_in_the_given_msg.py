@@ -41,7 +41,7 @@ def wrd_list(msg):
 msg = 'thequickbrownfox'
 print(wrd_list(msg))
 
-----------------------------------------------
+
 '''
 If the dictionary size is small and some words are
 not in the dictionary
