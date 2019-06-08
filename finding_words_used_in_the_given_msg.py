@@ -40,3 +40,41 @@ def wrd_list(msg):
 # Defining the input given by the user
 msg = 'thequickbrownfox'
 print(wrd_list(msg))
+
+----------------------------------------------
+'''
+If the dictionary size is small and some words are
+not in the dictionary
+
+def wrd_list(msg):
+
+    # word dictionary containing some random words
+    dict_wrd = {'the',
+                'to',
+                'quick',
+                'quest',
+                'brown',
+                'fox'}
+
+    final_list = []
+
+    # looping over the message to compare
+    # with the word in the dictionary
+
+    for word in dict_wrd:
+        if word in msg:
+            final_list.append(word)
+            msg = msg.replace(word,'')
+
+    if msg != '':
+        raise KeyError("word not found: {}".format(msg))
+
+    return final_list
+
+# Defining the input given by the user
+msg = 'tequickbrownfox'
+print(wrd_list(msg))
+
+# Expected output: KeyError, 'te' not found in the dictionary
+
+'''
