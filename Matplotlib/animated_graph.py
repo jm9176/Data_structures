@@ -2,12 +2,14 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import numpy as np
 
+# Initializing the figure
 fig = plt.figure()
 plt1 = fig.add_subplot(1,1,1)
 
+# Function for the animated plot
 def animate(i):
     x = np.linspace(0,2,1000)
-    y = np.sin(2*np.pi*(x-0.01*i))plt.
+    y = np.sin(2*np.pi*(x-0.01*i))
     plt1.clear()
     plt1.axis([0, 2, -2, 2])
     plt1.plot(x,y)
