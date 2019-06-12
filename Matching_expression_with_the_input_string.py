@@ -36,34 +36,33 @@ def ret_status(inp_exp, inp_str):
         for i in range(len(inp_exp)):
 
             if inp_str[j] == inp_exp[i]:
-                j += 1
                 continue
 
             # If the expression is '.' then replace it directly with
             # the corresponding element of the inp_str
             elif inp_exp[i] == '.':
                 inp_exp = inp_exp.replace(inp_exp[i], inp_str[j])
-                j += 1
 
             # If the expression is * then check for the previous element
             # and the current index
             elif inp_exp[i] == '*':
                 if i==0:
                     inp_exp = inp_exp.replace(inp_exp[i],inp_str[j])
-                    j += 1
 
                 # if the index is greater than 0, then check for the previous
                 # element, and compare with the inp_str
                 elif ord(inp_str[j])-96 >= ord(inp_exp[i-1])-96:
                     inp_exp = inp_exp.replace(inp_exp[i],inp_str[j])
-                    j += 1
 
                 else:
                     # If match not found then restoring the expression to
                     # its original state by reverting the changes
                     inp_exp = temp
                     j = 0
-
+            
+            # Incrementing the index for the inp_str
+            j += 1
+            
             # Check if inp_exp has been modified to contain the full inp_str
             # If yes, then stop the iteration and return the new expression
             if inp_str in inp_exp:
