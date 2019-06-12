@@ -1,5 +1,5 @@
 '''
-K-means clustering for a random data input of 1000 points
+K-means clustering for a random data input of 2000 points
 The code returns 3 cluster regions, with the list of data
 points stored un list_k1, list_k2, and list_k3 respectively
 
