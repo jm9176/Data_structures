@@ -19,6 +19,9 @@ since it would run off to the left), so we can trap 8 units of water.
 # max function while updating the next maximum level at the
 # end of for loop. OPTIMIZATION REQUIRED**
 
+# Optimized solution: https://www.geeksforgeeks.org/trapping-rain-water/
+
+
 # Function returning the extra water units which can be stored
 def lvl_wtr(inp_arr):
 
