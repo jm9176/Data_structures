@@ -1,3 +1,12 @@
+'''
+Creating the classifier to predict the digits as per the given input image.
+The data used for the classifier is used from the following source and has
+also been attached as a .rar format in this directory
+
+https://www.kaggle.com/c/digit-recognizer/data
+
+'''
+
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
