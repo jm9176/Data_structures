@@ -5,6 +5,14 @@ to make a palindrome). There are seven other palindromes that can
 be made from "race" by adding three letters, but "ecarace" comes
 first alphabetically. As another example, given the string "google",
 you should return "elgoogle".
+
+Approach:
+for the palindrome word generation either the reverse of input word
+can be added to the front of input word or at the end. For e.g if the
+word is 'race', then reverse word will be 'ecar'. So the basic approach
+will give us ecar + race or race + ecar, which on further processing
+can give ecarace and racecar
+
 '''
 
 # Function returning the independent word list for, prefix addition
@@ -60,6 +68,7 @@ def ret_plindrme(inp_str):
     return min_wrd, min_edits
 
 # Taking the input from the user
-inp_str = 'race'
+inp_str = 'google'
 print("Palindrome word with min insertion: ", ret_plindrme(inp_str))
+
 
