@@ -43,7 +43,7 @@ def ret_wrdList(inp_str, rev_str, index):
         elif index == 0:
             rev_str = rev_str[1:]
         elif index == -1:
-            rev_str = rev_str[:len(rev_str)-1]
+            rev_str = rev_str[-1]
                 
     return wrd_list 
 
