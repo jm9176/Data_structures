@@ -55,7 +55,10 @@ def ret_plindrme(inp_str):
     # The third parameter for the function can only be 0 or -1. 0 where the rev_str
     # will be added to the inp_str and -1 where the inp_str is being added to rev_str
     wrd_list = ret_wrdList(inp_str, rev_str,-1) + ret_wrdList(inp_str, rev_str, 0)
-
+    
+    # Arranging the words in alphabetical order
+    wrd_list.sort()
+    
     # Finding the word with minimum edits and calculating the edit length
     min_wrd = wrd_list[0]
 
