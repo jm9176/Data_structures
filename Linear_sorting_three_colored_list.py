@@ -4,14 +4,11 @@ Given an array of strictly the characters 'R',
 so that all the Rs come first, the Gs come second,
 and the Bs come last. You can only swap elements
 of the array. Do this in linear time and in-place.
-
 For example, given the array ['G', 'B', 'R', 'R',
 'B', 'R', 'G'], it should become ['R', 'R', 'R',
 'G', 'G', 'B', 'B'].
-
 Refernce: Dutch Flag example
 https://en.wikipedia.org/wiki/Dutch_national_flag_problem
-
 '''
 
 # Function returning the modified list as required
@@ -36,15 +33,15 @@ def mod_arr(inp_arr):
             # the position of low and mid index
             if inp_arr[ind_mid] == 'R':
                 inp_arr[ind_low], inp_arr[ind_mid] = inp_arr[ind_mid], inp_arr[ind_low]
-                low += 1
-                mid += 1
+                ind_low += 1
+                ind_mid += 1
             
-            elif inp_arr[mid] == 'G':
-                mid += 1
+            elif inp_arr[ind_mid] == 'G':
+                ind_mid += 1
 
             else:
-                inp_arr[mid], inp_arr[high] = inp_arr[high], inp_arr[mid]
-                high -= 1
+                inp_arr[ind_mid], inp_arr[ind_high] = inp_arr[ind_high], inp_arr[ind_mid]
+                ind_high -= 1
 
     return inp_arr
 
