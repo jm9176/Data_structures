@@ -20,6 +20,42 @@ the first one is lexicographically smaller.
 
 # Fnction returning the list of person's itinerary
 def ret_itinerary(inp_arr, start):
+    itinerary = [start]
+    iter_cnt = 0
+
+    # Iterating over the entire input list
+    while len(inp_arr) > 0:
+
+        # If the location is not found and the iteration
+        # count equals to the len of the inp_arr which is
+        # greater than max count value
+        if iter_cnt == len(inp_arr):    
+            return '{}: Location not found'.format(None)
+
+        # If the start location is found the perform the following
+        # operations and make iteration count zero else update the
+        # iteration count
+        if inp_arr[iter_cnt][0] == start:
+            start = inp_arr[iter_cnt][1]
+            itinerary.append(start)
+
+            inp_arr.remove(inp_arr[iter_cnt])
+            iter_cnt = 0
+        else:
+            iter_cnt += 1
+                
+    return 'Person itinerary is defined as: {}'.format(itinerary)
+
+# Taking the input from the user
+given_arr = [('A','B'),('A','C'),('B','C'),('C','A')]
+given_start = 'A'
+print(ret_itinerary(given_arr, given_start))
+
+''' 
+                ANOTHER APPROACH
+
+# Fnction returning the list of person's itinerary
+def ret_itinerary(inp_arr, start):
     start_list, dest_list = [], []
     itinerary = [start]
 
@@ -59,3 +95,4 @@ def ret_itinerary(inp_arr, start):
 given_arr = [('A','B'),('A','C'),('B','C'),('C','A')]
 given_start = 'A'
 print(ret_itinerary(given_arr, given_start))
+'''
