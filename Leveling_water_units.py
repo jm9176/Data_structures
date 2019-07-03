@@ -54,3 +54,43 @@ def lvl_wtr(inp_arr):
 inp_arr = [3, 0,1,3,0,5]
 print(lvl_wtr(inp_arr))
 
+'''
+# Function returning the water levels
+def lvl_wtr(inp_arr):
+
+    # Two independent lists storing the max water levels starting
+    # from left and right
+    left_lvl = []
+    right_lvl = []
+
+    # Initializing the left and right maximum levels 
+    left_max = 0
+    right_max = 0
+
+    # Iterating over the given input to check the max water level
+    # for left_lvl and right_lvl
+    for i in range(len(inp_arr)):
+        left_lvl.append(max(left_max, inp_arr[i]))
+
+        if inp_arr[i]>left_max:
+            left_max = inp_arr[i]
+
+    for i in range(len(inp_arr)):
+        right_lvl.insert(0,max(inp_arr[-i-1], right_max))
+
+        if inp_arr[-i-1] > right_max:
+            right_max = inp_arr[-i-1]
+
+    # Additionally required water which the given input can hold
+    req_water = 0
+
+    for i in range(len(inp_arr)):
+        req_water += min(left_lvl[i], right_lvl[i]) - inp_arr[i]
+
+
+    return req_water
+
+# Taking the input from the user
+given_arr = [0,1,2]
+print(lvl_wtr(given_arr))
+'''
