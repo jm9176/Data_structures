@@ -32,7 +32,7 @@ def ret_palindrome(inp_str):
 
             # Creating a sub-string, such that the length of the sub-string
             # is reduced by one element with each iteration in the j-loop
-            temp_str = inp_str[i:-1-j]
+            temp_str = inp_str[i:len(inp_str)-j]
             temp_len = int(len(temp_str)/2)
 
             # To check if the current sub-string is of even length
