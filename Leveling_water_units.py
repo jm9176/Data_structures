@@ -75,7 +75,6 @@ def lvl_wtr(inp_arr):
         if inp_arr[i]>left_max:
             left_max = inp_arr[i]
 
-    for i in range(len(inp_arr)):
         right_lvl.insert(0,max(inp_arr[-i-1], right_max))
 
         if inp_arr[-i-1] > right_max:
