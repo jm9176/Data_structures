@@ -29,9 +29,5 @@ def ret_cardShuffle(inp_arr):
 
 # Taking the input from the user. Initializing the deck of 52 cards
 # in the form of a list of 52 integers
-given_inp = []
-
-for i in range(52):
-    given_inp.append(i+1)
-
+given_inp = range(1,53)
 print(ret_cardShuffle(given_inp))
