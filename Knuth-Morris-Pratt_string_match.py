@@ -30,7 +30,7 @@ def ret_string_match(inp_str, inp_patt):
         # If the length of the pattern matches the index length using
         # curr_index, then return the index value for the pattern
         if i - curr_index == len(inp_patt) - 1:
-            return 'Match found starting index: {}'.format(curr_index + 1)
+            return 'Match found at starting index: {}'.format(curr_index + 1)
 
         i += 1
 
@@ -38,7 +38,7 @@ def ret_string_match(inp_str, inp_patt):
     return 'Match not found'
 
 # Taking the input from the user
-given_str = 'abcdfghi'
+given_str = 'abcdefghi'
 given_patt = 'def'
 print(ret_string_match(given_str, given_patt))
 
