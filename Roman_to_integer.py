@@ -52,5 +52,5 @@ def romanToInt(inp_str):
 
 
 # Taking the input from the user
-given_str = ''
+given_str = 'MCMXCIV'
 print(romanToInt(given_str))
