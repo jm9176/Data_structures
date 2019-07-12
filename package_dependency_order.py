@@ -5,6 +5,10 @@ Ordering the package dependencies
 # be completed
 def pack_order(inp_map):
 
+    # case for the empty map
+    if not inp_map:
+        return 'Input map is empty'
+    
     # List storing the nodes which have not been traversed
     # completely and closed_list to store the nodes which have
     # been fully visited
